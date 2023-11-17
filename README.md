@@ -16,7 +16,7 @@ Other options to consider:
 - Implement Load Balancing Among Elevators
 - Consider Elevator Direction
 - Optimize for Idle Time
-- Advanced Algorithms: Nearest Car, Collective Control, or Destination Dispatch. See !(link)[https://peters-research.com/index.php/papers/elevator-dispatching/]
+- Advanced Algorithms: Nearest Car, Collective Control, or Destination Dispatch. See [https://peters-research.com/index.php/papers/elevator-dispatching/](link)
 
 
 ## Request Handling
