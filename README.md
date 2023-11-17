@@ -11,17 +11,12 @@
 Algorithm considering the minimun proximity of elevators to request floors and considering occupancy.
 
 Other options to consider:
-	- Prioritize Requests by Wait Time
-
-	- Dynamic Re-evaluation
-
-	- Implement Load Balancing Among Elevators
-
-	- Consider Elevator Direction
-
-	- Optimize for Idle Time
-
-	- Advanced Algorithms: Nearest Car, Collective Control, or Destination Dispatch. See !(link)[https://peters-research.com/index.php/papers/elevator-dispatching/]
+- Prioritize Requests by Wait Time
+- Dynamic Re-evaluation
+- Implement Load Balancing Among Elevators
+- Consider Elevator Direction
+- Optimize for Idle Time
+- Advanced Algorithms: Nearest Car, Collective Control, or Destination Dispatch. See !(link)[https://peters-research.com/index.php/papers/elevator-dispatching/]
 
 
 ## Request Handling
