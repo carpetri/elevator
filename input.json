@@ -1,0 +1,4 @@
+{"time": 0, "id": "passenger1", "source": 1, "dest": 10}
+{"time": 0, "id": "passenger2", "source": 3, "dest": 20}
+{"time": 5, "id": "passenger3", "source": 10, "dest": 1}
+{"time": 6, "id": "passenger4", "source": 2, "dest": 3}
