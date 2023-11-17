@@ -16,15 +16,13 @@ Other options to consider:
 - Implement Load Balancing Among Elevators
 - Consider Elevator Direction
 - Optimize for Idle Time
-- Advanced Algorithms: Nearest Car, Collective Control, or Destination Dispatch. See [https://peters-research.com/index.php/papers/elevator-dispatching/](link)
+- Advanced Algorithms: Nearest Car, Collective Control, or Destination Dispatch. See [link](https://peters-research.com/index.php/papers/elevator-dispatching/)
 
 
 ## Request Handling
-
 Requests ase based on the time unit, ensuring no "looking ahead" in the request queue.
 
 ## Time Management
-
 Included a time control mechanism to simulate the passing of time and the handling of requests in a time-ordered fashion.
 
 ## Logging and Statistics:
@@ -32,5 +30,5 @@ Included a time control mechanism to simulate the passing of time and the handli
 - Passenger class will save the data needed for the needed stats.
 
 ## Testing and Validation:
-Ensure the system behaves as expected under various scenarios, including edge cases.
+See the test cases. 
 
