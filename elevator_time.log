@@ -1,0 +1,349 @@
+[
+    {
+        "time": 0,
+        "positions": {
+            "E1": 1
+        },
+        "passengers_assigned": {
+            "E1": []
+        }
+    },
+    {
+        "time": 1,
+        "positions": {
+            "E1": 1
+        },
+        "passengers_assigned": {
+            "E1": [
+                1
+            ]
+        }
+    },
+    {
+        "time": 2,
+        "positions": {
+            "E1": 2
+        },
+        "passengers_assigned": {
+            "E1": [
+                1
+            ]
+        }
+    },
+    {
+        "time": 3,
+        "positions": {
+            "E1": 3
+        },
+        "passengers_assigned": {
+            "E1": [
+                1
+            ]
+        }
+    },
+    {
+        "time": 4,
+        "positions": {
+            "E1": 4
+        },
+        "passengers_assigned": {
+            "E1": [
+                1
+            ]
+        }
+    },
+    {
+        "time": 5,
+        "positions": {
+            "E1": 5
+        },
+        "passengers_assigned": {
+            "E1": [
+                1,
+                2
+            ]
+        }
+    },
+    {
+        "time": 6,
+        "positions": {
+            "E1": 6
+        },
+        "passengers_assigned": {
+            "E1": [
+                1,
+                2
+            ]
+        }
+    },
+    {
+        "time": 7,
+        "positions": {
+            "E1": 7
+        },
+        "passengers_assigned": {
+            "E1": [
+                1,
+                2
+            ]
+        }
+    },
+    {
+        "time": 8,
+        "positions": {
+            "E1": 8
+        },
+        "passengers_assigned": {
+            "E1": [
+                1,
+                2
+            ]
+        }
+    },
+    {
+        "time": 9,
+        "positions": {
+            "E1": 7
+        },
+        "passengers_assigned": {
+            "E1": [
+                2
+            ]
+        }
+    },
+    {
+        "time": 10,
+        "positions": {
+            "E1": 6
+        },
+        "passengers_assigned": {
+            "E1": [
+                2,
+                3
+            ]
+        }
+    },
+    {
+        "time": 11,
+        "positions": {
+            "E1": 5
+        },
+        "passengers_assigned": {
+            "E1": [
+                2,
+                3
+            ]
+        }
+    },
+    {
+        "time": 12,
+        "positions": {
+            "E1": 4
+        },
+        "passengers_assigned": {
+            "E1": [
+                2,
+                3
+            ]
+        }
+    },
+    {
+        "time": 13,
+        "positions": {
+            "E1": 5
+        },
+        "passengers_assigned": {
+            "E1": [
+                2,
+                3
+            ]
+        }
+    },
+    {
+        "time": 14,
+        "positions": {
+            "E1": 6
+        },
+        "passengers_assigned": {
+            "E1": [
+                2,
+                3
+            ]
+        }
+    },
+    {
+        "time": 15,
+        "positions": {
+            "E1": 7
+        },
+        "passengers_assigned": {
+            "E1": [
+                2,
+                3
+            ]
+        }
+    },
+    {
+        "time": 16,
+        "positions": {
+            "E1": 6
+        },
+        "passengers_assigned": {
+            "E1": [
+                2
+            ]
+        }
+    },
+    {
+        "time": 17,
+        "positions": {
+            "E1": 5
+        },
+        "passengers_assigned": {
+            "E1": [
+                2
+            ]
+        }
+    },
+    {
+        "time": 18,
+        "positions": {
+            "E1": 4
+        },
+        "passengers_assigned": {
+            "E1": [
+                2
+            ]
+        }
+    },
+    {
+        "time": 19,
+        "positions": {
+            "E1": 3
+        },
+        "passengers_assigned": {
+            "E1": [
+                2
+            ]
+        }
+    },
+    {
+        "time": 20,
+        "positions": {
+            "E1": 2
+        },
+        "passengers_assigned": {
+            "E1": [
+                2
+            ]
+        }
+    },
+    {
+        "time": 21,
+        "positions": {
+            "E1": 1
+        },
+        "passengers_assigned": {
+            "E1": [
+                2
+            ]
+        }
+    },
+    {
+        "time": 22,
+        "positions": {
+            "E1": 2
+        },
+        "passengers_assigned": {
+            "E1": [
+                2
+            ]
+        }
+    },
+    {
+        "time": 23,
+        "positions": {
+            "E1": 3
+        },
+        "passengers_assigned": {
+            "E1": [
+                2
+            ]
+        }
+    },
+    {
+        "time": 24,
+        "positions": {
+            "E1": 4
+        },
+        "passengers_assigned": {
+            "E1": [
+                2
+            ]
+        }
+    },
+    {
+        "time": 25,
+        "positions": {
+            "E1": 5
+        },
+        "passengers_assigned": {
+            "E1": [
+                2
+            ]
+        }
+    },
+    {
+        "time": 26,
+        "positions": {
+            "E1": 6
+        },
+        "passengers_assigned": {
+            "E1": [
+                2
+            ]
+        }
+    },
+    {
+        "time": 27,
+        "positions": {
+            "E1": 7
+        },
+        "passengers_assigned": {
+            "E1": [
+                2
+            ]
+        }
+    },
+    {
+        "time": 28,
+        "positions": {
+            "E1": 8
+        },
+        "passengers_assigned": {
+            "E1": [
+                2
+            ]
+        }
+    },
+    {
+        "time": 29,
+        "positions": {
+            "E1": 9
+        },
+        "passengers_assigned": {
+            "E1": [
+                2
+            ]
+        }
+    },
+    {
+        "time": 30,
+        "positions": {
+            "E1": 9
+        },
+        "passengers_assigned": {
+            "E1": []
+        }
+    }
+]
