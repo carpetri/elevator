@@ -1,6 +1,12 @@
 import pandas as pd
 import json
 from collections import deque 
+import os
+
+DEBUG = os.getenv("DEBUG_ELEVATORS", False)
+def my_print(s):
+    if DEBUG:
+        print(s)
 
 class Passenger:
     """Represents a passenger in the elevator system."""
@@ -66,20 +72,20 @@ class ElevatorSystem:
         """Schedules elevators to fulfill requests."""
         for request in self.requests[:]:
             # Find the closest available elevator
-            #print( f"time is {self.time} and person is {request.id}")
+            #my_print( f"time is {self.time} and person is {request.id}")
             closest_elevator = min(
                 self.elevators, 
                 key=lambda e: abs(e.current_floor - request.source_floor) if not e.is_full() else float('inf')
             )
             if not closest_elevator.is_full():
-                print(f"Time {self.time}. passenger {request.id} is assigned into elevator {closest_elevator.id}")
+                my_print(f"Time {self.time}. passenger {request.id} is assigned into elevator {closest_elevator.id}")
                 closest_elevator.load_passenger(request)
                 self.requests.remove(request)
             else:
                 request.assignation_wait_time += 1
-                print(f"Time is {self.time} Person {request.id} is waiting. elevator is full adding wait_time: {request.wait_time()}")
-                #print(f"current wait_time {request.wait_time()}")
-                #print(f"floor is {closest_elevator.current_floor}")
+                my_print(f"Time is {self.time} Person {request.id} is waiting. elevator is full adding wait_time: {request.wait_time()}")
+                #my_print(f"current wait_time {request.wait_time()}")
+                #my_print(f"floor is {closest_elevator.current_floor}")
 
     def move_passengers(self):
         for elevator in self.elevators:
@@ -90,11 +96,11 @@ class ElevatorSystem:
                         if not passenger.pickup_time is None:  
                             self.processed_requests.append(passenger)
                             elevator.unload_passenger(passenger)
-                            print(f"Unloading: {passenger.id}")
-                            print(f"Remaining: {[p.id for p in self.requests]}")
+                            my_print(f"Unloading: {passenger.id}")
+                            my_print(f"Remaining: {[p.id for p in self.requests]}")
                     # Mark the pickup_time
                     if passenger.source_floor == elevator.current_floor  :
-                        print(f"floor is {elevator.current_floor} passenger {passenger.id} is picked at time {self.time}")
+                        my_print(f"floor is {elevator.current_floor} passenger {passenger.id} is picked at time {self.time}")
                         passenger.pickup_time = self.time
     
     def move_elevators(self):
@@ -105,7 +111,7 @@ class ElevatorSystem:
                 on_board_passengers = [p for p in elevator.passengers if p.pickup_time is not None]
                 if on_board_passengers:
                     nearest_passenger = min(on_board_passengers, key=lambda p: abs(elevator.current_floor - p.target_floor))
-                    print(f"At floor {elevator.current_floor} going to drop {nearest_passenger.id} at {nearest_passenger.target_floor}")
+                    my_print(f"At floor {elevator.current_floor} going to drop {nearest_passenger.id} at {nearest_passenger.target_floor}")
                     if elevator.current_floor < nearest_passenger.target_floor:
                         elevator.current_floor += 1
                     elif elevator.current_floor > nearest_passenger.target_floor:
@@ -114,7 +120,7 @@ class ElevatorSystem:
                     # Move towards the nearest source
                     waiting_passengers = [p for p in elevator.passengers if p.pickup_time is None]
                     nearest_passenger = min(waiting_passengers, key=lambda p: abs(elevator.current_floor - p.source_floor))
-                    print(f"At floor {elevator.current_floor} going to pick {nearest_passenger.id} at {nearest_passenger.source_floor}")
+                    my_print(f"At floor {elevator.current_floor} going to pick {nearest_passenger.id} at {nearest_passenger.source_floor}")
                     if elevator.current_floor < nearest_passenger.source_floor:
                         elevator.current_floor += 1
                     elif elevator.current_floor > nearest_passenger.source_floor:
@@ -134,7 +140,7 @@ class ElevatorSystem:
     
     def move_time(self):
         """Funny named function that advances the system by one time unit."""
-        print(f'\nTime is {self.time}')
+        my_print(f'\nTime is {self.time}')
         self.schedule_elevators()
         self.log_positions()
         self.move_passengers()
@@ -206,17 +212,18 @@ if __name__ == "__main__":
         })
 
     passenger_stats_df = pd.DataFrame(passenger_stats)
-    print(passenger_stats_df)
+    my_print(passenger_stats_df)
 
-    #
-    stats_summary = {
-        'Min Wait Time': passenger_stats_df['Wait Time'].min(),
-        'Max Wait Time': passenger_stats_df['Wait Time'].max(),
-        'Mean Wait Time': passenger_stats_df['Wait Time'].mean(),
-        'Min Total Time': passenger_stats_df['Total Time'].min(),
-        'Max Total Time': passenger_stats_df['Total Time'].max(),
-        'Mean Total Time': passenger_stats_df['Total Time'].mean()
-    }
-    print(stats_summary)
+    stats_summary = passenger_stats_df.agg({
+    'Wait Time': ['min', 'max', 'mean'],
+    'Total Time': ['min', 'max', 'mean']
+    })
+    
+    stats_summary.reset_index(inplace=True)
+    long_format_data = stats_summary.melt(id_vars='index', var_name='var', value_name='Value')
+    long_format_data['Variable'] = long_format_data['index'].str.capitalize() + ' ' + long_format_data['var']
+
+
+    print(long_format_data[["Variable", "Value"]].to_string(index=False, header=False))
 
 
