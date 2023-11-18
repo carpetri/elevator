@@ -30,5 +30,7 @@ Included a time control mechanism to simulate the passing of time and the handli
 - Passenger class will save the data needed for the needed stats.
 
 ## Testing and Validation:
-See the test cases. 
+See the test cases file. Run with:
+
+`pytest tests.py -v`
 
