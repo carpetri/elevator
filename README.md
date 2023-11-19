@@ -1,3 +1,4 @@
+[![codecov](https://codecov.io/gh/elevator/branch/main/graph/badge.svg)](https://codecov.io/gh/elevator)
 # Elevator System
 
 ## Approach to Development
