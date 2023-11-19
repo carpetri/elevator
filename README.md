@@ -32,5 +32,5 @@ Included a time control mechanism to simulate the passing of time and the handli
 ## Testing and Validation:
 See the test cases file. Run with:
 
-`pytest tests.py -v`
+`pytest`
 
