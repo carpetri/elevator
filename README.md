@@ -1,4 +1,4 @@
-[![codecov](https://codecov.io/gh/elevator/branch/main/graph/badge.svg)](https://codecov.io/gh/elevator)
+[![codecov](https://codecov.io/gh/carpetri/elevator/branch/main/graph/badge.svg)](https://codecov.io/gh/carpetri/elevator/)
 # Elevator System
 
 ## Approach to Development
