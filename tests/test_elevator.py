@@ -10,6 +10,7 @@ def test_single_passenger():
     }
     elevator_system = run_simulation(**input_data)
     assert len(elevator_system.processed_requests) == 1
+    assert elevator_system.all_requests_processed()
     assert elevator_system.processed_requests[0].total_time() == 2
 
 def test_capacity_reached():
