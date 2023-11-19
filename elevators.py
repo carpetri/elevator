@@ -9,7 +9,7 @@ import sys
 
 ### SETUP LOGS
 DEBUG = os.getenv("DEBUG_ELEVATORS", False) == "TRUE"
-log_level = logging.DEBUG if DEBUG else logging.INFO
+log_level = logging.DEBUG if 1 else logging.INFO
 logger = logging.getLogger(__name__)
 fmt = '%(message)s'
 logging.basicConfig(stream=sys.stdout, level=log_level, format=fmt)
@@ -29,9 +29,9 @@ class Passenger:
     def wait_time(self):
         """Calculates the wait time for the passenger."""
         if not self.pickup_time is None:
-            return self.assignation_wait_time + self.pickup_time - self.request_time  if not self.pickup_time is None else None
+            return self.pickup_time - self.request_time  if not self.pickup_time is None else None
         
-        #Just for logging needs
+        #Just for logging needs while pickup time is not ready
         return self.assignation_wait_time 
   
     def total_time(self):
