@@ -7,14 +7,14 @@ jobs:
     runs-on: ubuntu-latest
     name: Test python API
     steps:
-    # - uses: actions/checkout@v3
-    # - uses: actions/setup-python@v2
-    #   with:
-    #     python-version: '3.12'
-    - name: Build Docker image
-      run: docker build -t elevator .
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v2
+      with:
+        python-version: '3.12'
+    - name: Install requirements
+      run: pip install -r requirements.txt
     - name: Run tests and collect coverage
-      run: docker run  -v $(pwd)/coverage.xml:/elevator/coverage.xml elevator pytest 
+      run: pytest
     - name: Upload coverage reports to Codecov with GitHub Action
       uses: codecov/codecov-action@v3
       env:
