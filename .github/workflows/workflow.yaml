@@ -12,9 +12,9 @@ jobs:
       with:
         python-version: '3.12'
     - name: Install requirements
-      run: pip install -r requirements.txt
+      run: docker build -t elevator .
     - name: Run tests and collect coverage
-      run: pytest -p no:warnings -v --cov --cov-report=xml
+      run: docker run elevator --cov-report=xml
     - name: Upload coverage reports to Codecov with GitHub Action
       uses: codecov/codecov-action@v3
       env:
