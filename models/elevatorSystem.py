@@ -31,6 +31,7 @@ class ElevatorSystem:
                 key=lambda e: abs(e.current_floor - request.source_floor) if not e.is_full() else float('inf')
             )
             if not closest_elevator.is_full():
+                request.assigned_elevator = closest_elevator.id
                 ElevatorSystem.logger.debug(f"Passenger {request.id} is assigned into elevator {closest_elevator.id}")
                 closest_elevator.load_passenger(request)
                 self.requests.remove(request)
@@ -43,8 +44,8 @@ class ElevatorSystem:
             if elevator.passengers[:]:
                 for passenger in elevator.passengers[:]:
                     if passenger.target_floor == elevator.current_floor:
-                        passenger.dropoff_time = self.time
                         if not passenger.pickup_time is None:  
+                            passenger.dropoff_time = self.time
                             self.processed_requests.append(passenger)
                             elevator.unload_passenger(passenger)
                             ElevatorSystem.logger.debug(f"Elevator {elevator.id}.\n\tUnloading passenger: {passenger.id}")
@@ -85,11 +86,23 @@ class ElevatorSystem:
         """Log the positions of the elevators and passengers"""
         
         # Passengers waiting
-        passenger_positions = {passenger.id: passenger.current_floor(self.time) for passenger in self.requests}
+        passenger_positions = {passenger.id: 
+            {"floor": passenger.current_floor(self.time),
+             "status": passenger.current_status(),}
+         for passenger in self.requests}
         
-        # Passengers traveling
+        # Passengers assigned
         for e in self.elevators:
-            passenger_positions.update({p.id: p.current_floor(self.time) for p in e.passengers})
+            passenger_positions.update({p.id:             
+                {"floor": p.current_floor(self.time),
+                "status": p.current_status(),
+                "elevator": p.assigned_elevator} for p in e.passengers})
+
+        # Passengers Done
+        passenger_positions.update({p.id:             
+            {"floor": p.current_floor(self.time),
+            "status": p.current_status(),
+            "elevator": p.assigned_elevator} for p in self.processed_requests})
         
         snapshot = {
             'time': self.time,
