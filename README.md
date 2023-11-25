@@ -30,6 +30,7 @@ options:
   -c CAPACITY, --capacity CAPACITY
                         Passenger capacity in each elevator.
   -v, --verbose         Enable debug mode.
+  -a, --animate         Enable animation.
 ```
 
 ### Input
