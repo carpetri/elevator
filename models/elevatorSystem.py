@@ -51,7 +51,7 @@ class ElevatorSystem:
                             ElevatorSystem.logger.debug(f"\tRemaining passengers: {[p.id for p in self.requests]}")
                     # Mark the pickup_time
                     if passenger.source_floor == elevator.current_floor  :
-                        ElevatorSystem.logger.debug(f"At floor {elevator.current_floor} passenger {passenger.id} is picked up.")
+                        ElevatorSystem.logger.debug(f"Elevator {elevator.id} is at floor {elevator.current_floor} passenger {passenger.id} is picked up.")
                         passenger.pickup_time = self.time
     
     def move_elevators(self):
@@ -62,7 +62,7 @@ class ElevatorSystem:
                 on_board_passengers = [p for p in elevator.passengers if p.pickup_time is not None]
                 if on_board_passengers:
                     nearest_passenger = min(on_board_passengers, key=lambda p: abs(elevator.current_floor - p.target_floor))
-                    ElevatorSystem.logger.debug(f"At floor {elevator.current_floor} going to drop {nearest_passenger.id} at {nearest_passenger.target_floor}")
+                    ElevatorSystem.logger.debug(f"Elevator {elevator.id} is t floor {elevator.current_floor} going to drop {nearest_passenger.id} at {nearest_passenger.target_floor}")
                     if elevator.current_floor < nearest_passenger.target_floor:
                         elevator.current_floor += 1
                     elif elevator.current_floor > nearest_passenger.target_floor:
@@ -71,7 +71,7 @@ class ElevatorSystem:
                     # Move towards the nearest source
                     waiting_passengers = [p for p in elevator.passengers if p.pickup_time is None]
                     nearest_passenger = min(waiting_passengers, key=lambda p: abs(elevator.current_floor - p.source_floor))
-                    ElevatorSystem.logger.debug(f"At floor {elevator.current_floor} going to pick {nearest_passenger.id} at {nearest_passenger.source_floor}")
+                    ElevatorSystem.logger.debug(f"Elevator {elevator.id} is at floor {elevator.current_floor} going to pick {nearest_passenger.id} at {nearest_passenger.source_floor}")
                     if elevator.current_floor < nearest_passenger.source_floor:
                         elevator.current_floor += 1
                     elif elevator.current_floor > nearest_passenger.source_floor:
@@ -82,12 +82,24 @@ class ElevatorSystem:
         return len(self.requests) == 0 and all(len(e.passengers) == 0 for e in self.elevators)
 
     def log_positions(self):
-        # Log the positions of the elevators
-        self.log.append({
+        """Log the positions of the elevators and passengers"""
+        
+        # Passengers waiting
+        passenger_positions = {passenger.id: passenger.current_floor(self.time) for passenger in self.requests}
+        
+        # Passengers traveling
+        for e in self.elevators:
+            passenger_positions.update({p.id: p.current_floor(self.time) for p in e.passengers})
+        
+        snapshot = {
             'time': self.time,
             'positions': {e.id: e.current_floor for e in self.elevators},
-            'passengers_assigned': {elevator.id : [ passenger.id for passenger in elevator.passengers ] for elevator in self.elevators}
-        })
+            'passengers_assigned': {elevator.id : [ passenger.id for passenger in elevator.passengers ] for elevator in self.elevators},
+            'passengers_positions': passenger_positions,
+        }
+
+        ElevatorSystem.logger.debug(f"Passenger positions:\n\t{ "\n\t".join( [ f"- {p}: {pos}" for p,pos in passenger_positions.items()]) }")
+        self.log.append(snapshot)
     
     def move_time(self):
         """Funny named function that advances the system by one time unit."""
