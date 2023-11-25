@@ -98,7 +98,7 @@ class ElevatorSystem:
             'passengers_positions': passenger_positions,
         }
 
-        ElevatorSystem.logger.debug(f"Passenger positions:\n\t{ "\n\t".join( [ f"- {p}: {pos}" for p,pos in passenger_positions.items()]) }")
+        ElevatorSystem.logger.debug(f"Passenger positions: { " ".join( [ f"- {p}: {pos}" for p,pos in passenger_positions.items()]) }")
         self.log.append(snapshot)
     
     def move_time(self):
