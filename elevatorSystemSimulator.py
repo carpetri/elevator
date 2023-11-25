@@ -9,6 +9,7 @@ import sys
 from models.passenger import Passenger
 from models.elevatorSystem import ElevatorSystem
 import argparse
+from plot import create_plot
 
 ########################################################
 # Parse parameters for simulation
@@ -25,11 +26,14 @@ parser.add_argument('output_file', type=str, nargs='?', default="elevator_time.l
 # Elevators in the future could have different capacities and restrictions on floors.
 # Toy parameters
 parser.add_argument('-ne', '--num-elevators', type=int, required=False, default=1, help='Number of elevators in the building.')
-parser.add_argument('-nf', '--num-floors', type=int, required=False, default=10, help='Number of floors in the building.')
+parser.add_argument('-nf', '--num-floors', type=int, required=False, default=20, help='Number of floors in the building.')
 parser.add_argument('-c', '--capacity', type=int, required=False, default = 2, help='Passenger capacity in each elevator.')
 
 #Verbose
 parser.add_argument('-v', '--verbose', action='store_true', help='Enable debug mode.')
+
+#Animate
+parser.add_argument('-a', '--animate', action='store_true', help='Enable animation.')
 
 # Parse arguments
 args = parser.parse_args()
@@ -45,6 +49,9 @@ elevator_capacity = args.capacity
 
 #debug mode
 verbose_mode = args.verbose
+
+#animate mode
+animate = args.animate
 
 ########################################################
 # Setup Logging 
@@ -99,3 +106,6 @@ if __name__ == "__main__":
 
     # Time summary
     print(elevator_system.time_summary())
+
+    if animate:
+        create_plot(num_floors= num_floors, num_elevators = num_elevators, log_file = output_file) 
