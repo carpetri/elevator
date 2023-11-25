@@ -21,3 +21,16 @@ class Passenger:
     def total_time(self):
         """Calculates the total time for the passenger's journey."""
         return self.dropoff_time - self.request_time   if not self.pickup_time is None else None
+
+    def current_floor(self, current_time):
+        """Logs the current floor of a passenger"""
+
+        # Passenger is waiting to get in
+        if self.pickup_time is None:
+            return self.source_floor
+        
+        # Passenger got to their destination
+        if self.dropoff_time is not None:
+            return self.target_floor
+
+        return current_time - self.pickup_time + self.source_floor
