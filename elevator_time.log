@@ -11,8 +11,16 @@
             ]
         },
         "passengers_positions": {
-            "passenger1": 1,
-            "passenger2": 3
+            "passenger1": {
+                "floor": 1,
+                "status": "W",
+                "elevator": "E1"
+            },
+            "passenger2": {
+                "floor": 3,
+                "status": "W",
+                "elevator": "E1"
+            }
         }
     },
     {
@@ -27,8 +35,16 @@
             ]
         },
         "passengers_positions": {
-            "passenger1": 2,
-            "passenger2": 3
+            "passenger1": {
+                "floor": 2,
+                "status": "T",
+                "elevator": "E1"
+            },
+            "passenger2": {
+                "floor": 3,
+                "status": "W",
+                "elevator": "E1"
+            }
         }
     },
     {
@@ -43,8 +59,16 @@
             ]
         },
         "passengers_positions": {
-            "passenger1": 3,
-            "passenger2": 3
+            "passenger1": {
+                "floor": 3,
+                "status": "T",
+                "elevator": "E1"
+            },
+            "passenger2": {
+                "floor": 3,
+                "status": "W",
+                "elevator": "E1"
+            }
         }
     },
     {
@@ -59,8 +83,16 @@
             ]
         },
         "passengers_positions": {
-            "passenger1": 4,
-            "passenger2": 4
+            "passenger1": {
+                "floor": 4,
+                "status": "T",
+                "elevator": "E1"
+            },
+            "passenger2": {
+                "floor": 4,
+                "status": "T",
+                "elevator": "E1"
+            }
         }
     },
     {
@@ -75,8 +107,16 @@
             ]
         },
         "passengers_positions": {
-            "passenger1": 5,
-            "passenger2": 5
+            "passenger1": {
+                "floor": 5,
+                "status": "T",
+                "elevator": "E1"
+            },
+            "passenger2": {
+                "floor": 5,
+                "status": "T",
+                "elevator": "E1"
+            }
         }
     },
     {
@@ -91,9 +131,20 @@
             ]
         },
         "passengers_positions": {
-            "passenger3": 10,
-            "passenger1": 6,
-            "passenger2": 6
+            "passenger3": {
+                "floor": 10,
+                "status": "W"
+            },
+            "passenger1": {
+                "floor": 6,
+                "status": "T",
+                "elevator": "E1"
+            },
+            "passenger2": {
+                "floor": 6,
+                "status": "T",
+                "elevator": "E1"
+            }
         }
     },
     {
@@ -108,10 +159,24 @@
             ]
         },
         "passengers_positions": {
-            "passenger3": 10,
-            "passenger4": 2,
-            "passenger1": 7,
-            "passenger2": 7
+            "passenger3": {
+                "floor": 10,
+                "status": "W"
+            },
+            "passenger4": {
+                "floor": 2,
+                "status": "W"
+            },
+            "passenger1": {
+                "floor": 7,
+                "status": "T",
+                "elevator": "E1"
+            },
+            "passenger2": {
+                "floor": 7,
+                "status": "T",
+                "elevator": "E1"
+            }
         }
     },
     {
@@ -126,10 +191,24 @@
             ]
         },
         "passengers_positions": {
-            "passenger3": 10,
-            "passenger4": 2,
-            "passenger1": 8,
-            "passenger2": 8
+            "passenger3": {
+                "floor": 10,
+                "status": "W"
+            },
+            "passenger4": {
+                "floor": 2,
+                "status": "W"
+            },
+            "passenger1": {
+                "floor": 8,
+                "status": "T",
+                "elevator": "E1"
+            },
+            "passenger2": {
+                "floor": 8,
+                "status": "T",
+                "elevator": "E1"
+            }
         }
     },
     {
@@ -144,10 +223,24 @@
             ]
         },
         "passengers_positions": {
-            "passenger3": 10,
-            "passenger4": 2,
-            "passenger1": 9,
-            "passenger2": 9
+            "passenger3": {
+                "floor": 10,
+                "status": "W"
+            },
+            "passenger4": {
+                "floor": 2,
+                "status": "W"
+            },
+            "passenger1": {
+                "floor": 9,
+                "status": "T",
+                "elevator": "E1"
+            },
+            "passenger2": {
+                "floor": 9,
+                "status": "T",
+                "elevator": "E1"
+            }
         }
     },
     {
@@ -162,10 +255,24 @@
             ]
         },
         "passengers_positions": {
-            "passenger3": 10,
-            "passenger4": 2,
-            "passenger1": 10,
-            "passenger2": 10
+            "passenger3": {
+                "floor": 10,
+                "status": "W"
+            },
+            "passenger4": {
+                "floor": 2,
+                "status": "W"
+            },
+            "passenger1": {
+                "floor": 10,
+                "status": "T",
+                "elevator": "E1"
+            },
+            "passenger2": {
+                "floor": 10,
+                "status": "T",
+                "elevator": "E1"
+            }
         }
     },
     {
@@ -180,9 +287,25 @@
             ]
         },
         "passengers_positions": {
-            "passenger4": 2,
-            "passenger2": 11,
-            "passenger3": 10
+            "passenger4": {
+                "floor": 2,
+                "status": "W"
+            },
+            "passenger2": {
+                "floor": 11,
+                "status": "T",
+                "elevator": "E1"
+            },
+            "passenger3": {
+                "floor": 10,
+                "status": "W",
+                "elevator": "E1"
+            },
+            "passenger1": {
+                "floor": 10,
+                "status": "D",
+                "elevator": "E1"
+            }
         }
     },
     {
@@ -197,9 +320,25 @@
             ]
         },
         "passengers_positions": {
-            "passenger4": 2,
-            "passenger2": 12,
-            "passenger3": 10
+            "passenger4": {
+                "floor": 2,
+                "status": "W"
+            },
+            "passenger2": {
+                "floor": 12,
+                "status": "T",
+                "elevator": "E1"
+            },
+            "passenger3": {
+                "floor": 10,
+                "status": "W",
+                "elevator": "E1"
+            },
+            "passenger1": {
+                "floor": 10,
+                "status": "D",
+                "elevator": "E1"
+            }
         }
     },
     {
@@ -214,9 +353,25 @@
             ]
         },
         "passengers_positions": {
-            "passenger4": 2,
-            "passenger2": 13,
-            "passenger3": 10
+            "passenger4": {
+                "floor": 2,
+                "status": "W"
+            },
+            "passenger2": {
+                "floor": 13,
+                "status": "T",
+                "elevator": "E1"
+            },
+            "passenger3": {
+                "floor": 10,
+                "status": "W",
+                "elevator": "E1"
+            },
+            "passenger1": {
+                "floor": 10,
+                "status": "D",
+                "elevator": "E1"
+            }
         }
     },
     {
@@ -231,9 +386,25 @@
             ]
         },
         "passengers_positions": {
-            "passenger4": 2,
-            "passenger2": 14,
-            "passenger3": 10
+            "passenger4": {
+                "floor": 2,
+                "status": "W"
+            },
+            "passenger2": {
+                "floor": 14,
+                "status": "T",
+                "elevator": "E1"
+            },
+            "passenger3": {
+                "floor": 10,
+                "status": "W",
+                "elevator": "E1"
+            },
+            "passenger1": {
+                "floor": 10,
+                "status": "D",
+                "elevator": "E1"
+            }
         }
     },
     {
@@ -248,9 +419,25 @@
             ]
         },
         "passengers_positions": {
-            "passenger4": 2,
-            "passenger2": 15,
-            "passenger3": 10
+            "passenger4": {
+                "floor": 2,
+                "status": "W"
+            },
+            "passenger2": {
+                "floor": 15,
+                "status": "T",
+                "elevator": "E1"
+            },
+            "passenger3": {
+                "floor": 10,
+                "status": "W",
+                "elevator": "E1"
+            },
+            "passenger1": {
+                "floor": 10,
+                "status": "D",
+                "elevator": "E1"
+            }
         }
     },
     {
@@ -265,9 +452,25 @@
             ]
         },
         "passengers_positions": {
-            "passenger4": 2,
-            "passenger2": 16,
-            "passenger3": 10
+            "passenger4": {
+                "floor": 2,
+                "status": "W"
+            },
+            "passenger2": {
+                "floor": 16,
+                "status": "T",
+                "elevator": "E1"
+            },
+            "passenger3": {
+                "floor": 10,
+                "status": "W",
+                "elevator": "E1"
+            },
+            "passenger1": {
+                "floor": 10,
+                "status": "D",
+                "elevator": "E1"
+            }
         }
     },
     {
@@ -282,9 +485,25 @@
             ]
         },
         "passengers_positions": {
-            "passenger4": 2,
-            "passenger2": 17,
-            "passenger3": 10
+            "passenger4": {
+                "floor": 2,
+                "status": "W"
+            },
+            "passenger2": {
+                "floor": 17,
+                "status": "T",
+                "elevator": "E1"
+            },
+            "passenger3": {
+                "floor": 10,
+                "status": "W",
+                "elevator": "E1"
+            },
+            "passenger1": {
+                "floor": 10,
+                "status": "D",
+                "elevator": "E1"
+            }
         }
     },
     {
@@ -299,9 +518,25 @@
             ]
         },
         "passengers_positions": {
-            "passenger4": 2,
-            "passenger2": 18,
-            "passenger3": 10
+            "passenger4": {
+                "floor": 2,
+                "status": "W"
+            },
+            "passenger2": {
+                "floor": 18,
+                "status": "T",
+                "elevator": "E1"
+            },
+            "passenger3": {
+                "floor": 10,
+                "status": "W",
+                "elevator": "E1"
+            },
+            "passenger1": {
+                "floor": 10,
+                "status": "D",
+                "elevator": "E1"
+            }
         }
     },
     {
@@ -316,9 +551,25 @@
             ]
         },
         "passengers_positions": {
-            "passenger4": 2,
-            "passenger2": 19,
-            "passenger3": 10
+            "passenger4": {
+                "floor": 2,
+                "status": "W"
+            },
+            "passenger2": {
+                "floor": 19,
+                "status": "T",
+                "elevator": "E1"
+            },
+            "passenger3": {
+                "floor": 10,
+                "status": "W",
+                "elevator": "E1"
+            },
+            "passenger1": {
+                "floor": 10,
+                "status": "D",
+                "elevator": "E1"
+            }
         }
     },
     {
@@ -333,9 +584,25 @@
             ]
         },
         "passengers_positions": {
-            "passenger4": 2,
-            "passenger2": 20,
-            "passenger3": 10
+            "passenger4": {
+                "floor": 2,
+                "status": "W"
+            },
+            "passenger2": {
+                "floor": 20,
+                "status": "T",
+                "elevator": "E1"
+            },
+            "passenger3": {
+                "floor": 10,
+                "status": "W",
+                "elevator": "E1"
+            },
+            "passenger1": {
+                "floor": 10,
+                "status": "D",
+                "elevator": "E1"
+            }
         }
     },
     {
@@ -350,8 +617,26 @@
             ]
         },
         "passengers_positions": {
-            "passenger3": 10,
-            "passenger4": 2
+            "passenger3": {
+                "floor": 10,
+                "status": "W",
+                "elevator": "E1"
+            },
+            "passenger4": {
+                "floor": 2,
+                "status": "W",
+                "elevator": "E1"
+            },
+            "passenger1": {
+                "floor": 10,
+                "status": "D",
+                "elevator": "E1"
+            },
+            "passenger2": {
+                "floor": 20,
+                "status": "D",
+                "elevator": "E1"
+            }
         }
     },
     {
@@ -366,8 +651,26 @@
             ]
         },
         "passengers_positions": {
-            "passenger3": 10,
-            "passenger4": 2
+            "passenger3": {
+                "floor": 10,
+                "status": "W",
+                "elevator": "E1"
+            },
+            "passenger4": {
+                "floor": 2,
+                "status": "W",
+                "elevator": "E1"
+            },
+            "passenger1": {
+                "floor": 10,
+                "status": "D",
+                "elevator": "E1"
+            },
+            "passenger2": {
+                "floor": 20,
+                "status": "D",
+                "elevator": "E1"
+            }
         }
     },
     {
@@ -382,8 +685,26 @@
             ]
         },
         "passengers_positions": {
-            "passenger3": 10,
-            "passenger4": 2
+            "passenger3": {
+                "floor": 10,
+                "status": "W",
+                "elevator": "E1"
+            },
+            "passenger4": {
+                "floor": 2,
+                "status": "W",
+                "elevator": "E1"
+            },
+            "passenger1": {
+                "floor": 10,
+                "status": "D",
+                "elevator": "E1"
+            },
+            "passenger2": {
+                "floor": 20,
+                "status": "D",
+                "elevator": "E1"
+            }
         }
     },
     {
@@ -398,8 +719,26 @@
             ]
         },
         "passengers_positions": {
-            "passenger3": 10,
-            "passenger4": 2
+            "passenger3": {
+                "floor": 10,
+                "status": "W",
+                "elevator": "E1"
+            },
+            "passenger4": {
+                "floor": 2,
+                "status": "W",
+                "elevator": "E1"
+            },
+            "passenger1": {
+                "floor": 10,
+                "status": "D",
+                "elevator": "E1"
+            },
+            "passenger2": {
+                "floor": 20,
+                "status": "D",
+                "elevator": "E1"
+            }
         }
     },
     {
@@ -414,8 +753,26 @@
             ]
         },
         "passengers_positions": {
-            "passenger3": 10,
-            "passenger4": 2
+            "passenger3": {
+                "floor": 10,
+                "status": "W",
+                "elevator": "E1"
+            },
+            "passenger4": {
+                "floor": 2,
+                "status": "W",
+                "elevator": "E1"
+            },
+            "passenger1": {
+                "floor": 10,
+                "status": "D",
+                "elevator": "E1"
+            },
+            "passenger2": {
+                "floor": 20,
+                "status": "D",
+                "elevator": "E1"
+            }
         }
     },
     {
@@ -430,8 +787,26 @@
             ]
         },
         "passengers_positions": {
-            "passenger3": 10,
-            "passenger4": 2
+            "passenger3": {
+                "floor": 10,
+                "status": "W",
+                "elevator": "E1"
+            },
+            "passenger4": {
+                "floor": 2,
+                "status": "W",
+                "elevator": "E1"
+            },
+            "passenger1": {
+                "floor": 10,
+                "status": "D",
+                "elevator": "E1"
+            },
+            "passenger2": {
+                "floor": 20,
+                "status": "D",
+                "elevator": "E1"
+            }
         }
     },
     {
@@ -446,8 +821,26 @@
             ]
         },
         "passengers_positions": {
-            "passenger3": 10,
-            "passenger4": 2
+            "passenger3": {
+                "floor": 10,
+                "status": "W",
+                "elevator": "E1"
+            },
+            "passenger4": {
+                "floor": 2,
+                "status": "W",
+                "elevator": "E1"
+            },
+            "passenger1": {
+                "floor": 10,
+                "status": "D",
+                "elevator": "E1"
+            },
+            "passenger2": {
+                "floor": 20,
+                "status": "D",
+                "elevator": "E1"
+            }
         }
     },
     {
@@ -462,8 +855,26 @@
             ]
         },
         "passengers_positions": {
-            "passenger3": 10,
-            "passenger4": 2
+            "passenger3": {
+                "floor": 10,
+                "status": "W",
+                "elevator": "E1"
+            },
+            "passenger4": {
+                "floor": 2,
+                "status": "W",
+                "elevator": "E1"
+            },
+            "passenger1": {
+                "floor": 10,
+                "status": "D",
+                "elevator": "E1"
+            },
+            "passenger2": {
+                "floor": 20,
+                "status": "D",
+                "elevator": "E1"
+            }
         }
     },
     {
@@ -478,8 +889,26 @@
             ]
         },
         "passengers_positions": {
-            "passenger3": 10,
-            "passenger4": 2
+            "passenger3": {
+                "floor": 10,
+                "status": "W",
+                "elevator": "E1"
+            },
+            "passenger4": {
+                "floor": 2,
+                "status": "W",
+                "elevator": "E1"
+            },
+            "passenger1": {
+                "floor": 10,
+                "status": "D",
+                "elevator": "E1"
+            },
+            "passenger2": {
+                "floor": 20,
+                "status": "D",
+                "elevator": "E1"
+            }
         }
     },
     {
@@ -494,8 +923,26 @@
             ]
         },
         "passengers_positions": {
-            "passenger3": 10,
-            "passenger4": 2
+            "passenger3": {
+                "floor": 10,
+                "status": "W",
+                "elevator": "E1"
+            },
+            "passenger4": {
+                "floor": 2,
+                "status": "W",
+                "elevator": "E1"
+            },
+            "passenger1": {
+                "floor": 10,
+                "status": "D",
+                "elevator": "E1"
+            },
+            "passenger2": {
+                "floor": 20,
+                "status": "D",
+                "elevator": "E1"
+            }
         }
     },
     {
@@ -510,8 +957,26 @@
             ]
         },
         "passengers_positions": {
-            "passenger3": 11,
-            "passenger4": 2
+            "passenger3": {
+                "floor": 9,
+                "status": "T",
+                "elevator": "E1"
+            },
+            "passenger4": {
+                "floor": 2,
+                "status": "W",
+                "elevator": "E1"
+            },
+            "passenger1": {
+                "floor": 10,
+                "status": "D",
+                "elevator": "E1"
+            },
+            "passenger2": {
+                "floor": 20,
+                "status": "D",
+                "elevator": "E1"
+            }
         }
     },
     {
@@ -526,8 +991,26 @@
             ]
         },
         "passengers_positions": {
-            "passenger3": 12,
-            "passenger4": 2
+            "passenger3": {
+                "floor": 8,
+                "status": "T",
+                "elevator": "E1"
+            },
+            "passenger4": {
+                "floor": 2,
+                "status": "W",
+                "elevator": "E1"
+            },
+            "passenger1": {
+                "floor": 10,
+                "status": "D",
+                "elevator": "E1"
+            },
+            "passenger2": {
+                "floor": 20,
+                "status": "D",
+                "elevator": "E1"
+            }
         }
     },
     {
@@ -542,8 +1025,26 @@
             ]
         },
         "passengers_positions": {
-            "passenger3": 13,
-            "passenger4": 2
+            "passenger3": {
+                "floor": 7,
+                "status": "T",
+                "elevator": "E1"
+            },
+            "passenger4": {
+                "floor": 2,
+                "status": "W",
+                "elevator": "E1"
+            },
+            "passenger1": {
+                "floor": 10,
+                "status": "D",
+                "elevator": "E1"
+            },
+            "passenger2": {
+                "floor": 20,
+                "status": "D",
+                "elevator": "E1"
+            }
         }
     },
     {
@@ -558,8 +1059,26 @@
             ]
         },
         "passengers_positions": {
-            "passenger3": 14,
-            "passenger4": 2
+            "passenger3": {
+                "floor": 6,
+                "status": "T",
+                "elevator": "E1"
+            },
+            "passenger4": {
+                "floor": 2,
+                "status": "W",
+                "elevator": "E1"
+            },
+            "passenger1": {
+                "floor": 10,
+                "status": "D",
+                "elevator": "E1"
+            },
+            "passenger2": {
+                "floor": 20,
+                "status": "D",
+                "elevator": "E1"
+            }
         }
     },
     {
@@ -574,8 +1093,26 @@
             ]
         },
         "passengers_positions": {
-            "passenger3": 15,
-            "passenger4": 2
+            "passenger3": {
+                "floor": 5,
+                "status": "T",
+                "elevator": "E1"
+            },
+            "passenger4": {
+                "floor": 2,
+                "status": "W",
+                "elevator": "E1"
+            },
+            "passenger1": {
+                "floor": 10,
+                "status": "D",
+                "elevator": "E1"
+            },
+            "passenger2": {
+                "floor": 20,
+                "status": "D",
+                "elevator": "E1"
+            }
         }
     },
     {
@@ -590,8 +1127,26 @@
             ]
         },
         "passengers_positions": {
-            "passenger3": 16,
-            "passenger4": 2
+            "passenger3": {
+                "floor": 4,
+                "status": "T",
+                "elevator": "E1"
+            },
+            "passenger4": {
+                "floor": 2,
+                "status": "W",
+                "elevator": "E1"
+            },
+            "passenger1": {
+                "floor": 10,
+                "status": "D",
+                "elevator": "E1"
+            },
+            "passenger2": {
+                "floor": 20,
+                "status": "D",
+                "elevator": "E1"
+            }
         }
     },
     {
@@ -606,8 +1161,26 @@
             ]
         },
         "passengers_positions": {
-            "passenger3": 17,
-            "passenger4": 2
+            "passenger3": {
+                "floor": 3,
+                "status": "T",
+                "elevator": "E1"
+            },
+            "passenger4": {
+                "floor": 2,
+                "status": "W",
+                "elevator": "E1"
+            },
+            "passenger1": {
+                "floor": 10,
+                "status": "D",
+                "elevator": "E1"
+            },
+            "passenger2": {
+                "floor": 20,
+                "status": "D",
+                "elevator": "E1"
+            }
         }
     },
     {
@@ -622,8 +1195,26 @@
             ]
         },
         "passengers_positions": {
-            "passenger3": 18,
-            "passenger4": 2
+            "passenger3": {
+                "floor": 2,
+                "status": "T",
+                "elevator": "E1"
+            },
+            "passenger4": {
+                "floor": 2,
+                "status": "W",
+                "elevator": "E1"
+            },
+            "passenger1": {
+                "floor": 10,
+                "status": "D",
+                "elevator": "E1"
+            },
+            "passenger2": {
+                "floor": 20,
+                "status": "D",
+                "elevator": "E1"
+            }
         }
     },
     {
@@ -638,8 +1229,26 @@
             ]
         },
         "passengers_positions": {
-            "passenger3": 19,
-            "passenger4": 3
+            "passenger3": {
+                "floor": 1,
+                "status": "T",
+                "elevator": "E1"
+            },
+            "passenger4": {
+                "floor": 3,
+                "status": "T",
+                "elevator": "E1"
+            },
+            "passenger1": {
+                "floor": 10,
+                "status": "D",
+                "elevator": "E1"
+            },
+            "passenger2": {
+                "floor": 20,
+                "status": "D",
+                "elevator": "E1"
+            }
         }
     },
     {
@@ -653,7 +1262,26 @@
             ]
         },
         "passengers_positions": {
-            "passenger4": 3
+            "passenger4": {
+                "floor": 4,
+                "status": "T",
+                "elevator": "E1"
+            },
+            "passenger1": {
+                "floor": 10,
+                "status": "D",
+                "elevator": "E1"
+            },
+            "passenger2": {
+                "floor": 20,
+                "status": "D",
+                "elevator": "E1"
+            },
+            "passenger3": {
+                "floor": 1,
+                "status": "D",
+                "elevator": "E1"
+            }
         }
     },
     {
@@ -667,7 +1295,26 @@
             ]
         },
         "passengers_positions": {
-            "passenger4": 3
+            "passenger4": {
+                "floor": 3,
+                "status": "T",
+                "elevator": "E1"
+            },
+            "passenger1": {
+                "floor": 10,
+                "status": "D",
+                "elevator": "E1"
+            },
+            "passenger2": {
+                "floor": 20,
+                "status": "D",
+                "elevator": "E1"
+            },
+            "passenger3": {
+                "floor": 1,
+                "status": "D",
+                "elevator": "E1"
+            }
         }
     },
     {
@@ -678,6 +1325,27 @@
         "passengers_assigned": {
             "E1": []
         },
-        "passengers_positions": {}
+        "passengers_positions": {
+            "passenger1": {
+                "floor": 10,
+                "status": "D",
+                "elevator": "E1"
+            },
+            "passenger2": {
+                "floor": 20,
+                "status": "D",
+                "elevator": "E1"
+            },
+            "passenger3": {
+                "floor": 1,
+                "status": "D",
+                "elevator": "E1"
+            },
+            "passenger4": {
+                "floor": 3,
+                "status": "D",
+                "elevator": "E1"
+            }
+        }
     }
 ]
