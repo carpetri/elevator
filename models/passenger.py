@@ -9,6 +9,7 @@ class Passenger:
         self.pickup_time = None
         self.dropoff_time = None
         self.assignation_wait_time = 0
+        self.assigned_elevator = None
 
     def wait_time(self):
         """Calculates the wait time for the passenger."""
@@ -33,4 +34,18 @@ class Passenger:
         if self.dropoff_time is not None:
             return self.target_floor
 
-        return current_time - self.pickup_time + self.source_floor
+        sign = 1 if self.source_floor < self.target_floor else -1
+        return self.source_floor + sign*abs(current_time - self.pickup_time) 
+
+    def current_status(self):
+        """Logs the Status passenger. W: Waiting, T: Traveling, D: Done"""
+
+        # Passenger is waiting to get in
+        if self.pickup_time is None:
+            return "W"
+        
+        # Passenger got to their destination
+        if self.dropoff_time is None:
+            return "T"
+
+        return "D"
