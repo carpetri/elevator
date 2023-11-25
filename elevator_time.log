@@ -9,6 +9,10 @@
                 "passenger1",
                 "passenger2"
             ]
+        },
+        "passengers_positions": {
+            "passenger1": 1,
+            "passenger2": 3
         }
     },
     {
@@ -21,6 +25,10 @@
                 "passenger1",
                 "passenger2"
             ]
+        },
+        "passengers_positions": {
+            "passenger1": 2,
+            "passenger2": 3
         }
     },
     {
@@ -33,6 +41,10 @@
                 "passenger1",
                 "passenger2"
             ]
+        },
+        "passengers_positions": {
+            "passenger1": 3,
+            "passenger2": 3
         }
     },
     {
@@ -45,6 +57,10 @@
                 "passenger1",
                 "passenger2"
             ]
+        },
+        "passengers_positions": {
+            "passenger1": 4,
+            "passenger2": 4
         }
     },
     {
@@ -57,6 +73,10 @@
                 "passenger1",
                 "passenger2"
             ]
+        },
+        "passengers_positions": {
+            "passenger1": 5,
+            "passenger2": 5
         }
     },
     {
@@ -69,6 +89,11 @@
                 "passenger1",
                 "passenger2"
             ]
+        },
+        "passengers_positions": {
+            "passenger3": 10,
+            "passenger1": 6,
+            "passenger2": 6
         }
     },
     {
@@ -81,6 +106,12 @@
                 "passenger1",
                 "passenger2"
             ]
+        },
+        "passengers_positions": {
+            "passenger3": 10,
+            "passenger4": 2,
+            "passenger1": 7,
+            "passenger2": 7
         }
     },
     {
@@ -93,6 +124,12 @@
                 "passenger1",
                 "passenger2"
             ]
+        },
+        "passengers_positions": {
+            "passenger3": 10,
+            "passenger4": 2,
+            "passenger1": 8,
+            "passenger2": 8
         }
     },
     {
@@ -105,6 +142,12 @@
                 "passenger1",
                 "passenger2"
             ]
+        },
+        "passengers_positions": {
+            "passenger3": 10,
+            "passenger4": 2,
+            "passenger1": 9,
+            "passenger2": 9
         }
     },
     {
@@ -117,6 +160,12 @@
                 "passenger1",
                 "passenger2"
             ]
+        },
+        "passengers_positions": {
+            "passenger3": 10,
+            "passenger4": 2,
+            "passenger1": 10,
+            "passenger2": 10
         }
     },
     {
@@ -129,6 +178,11 @@
                 "passenger2",
                 "passenger3"
             ]
+        },
+        "passengers_positions": {
+            "passenger4": 2,
+            "passenger2": 11,
+            "passenger3": 10
         }
     },
     {
@@ -141,6 +195,11 @@
                 "passenger2",
                 "passenger3"
             ]
+        },
+        "passengers_positions": {
+            "passenger4": 2,
+            "passenger2": 12,
+            "passenger3": 10
         }
     },
     {
@@ -153,6 +212,11 @@
                 "passenger2",
                 "passenger3"
             ]
+        },
+        "passengers_positions": {
+            "passenger4": 2,
+            "passenger2": 13,
+            "passenger3": 10
         }
     },
     {
@@ -165,6 +229,11 @@
                 "passenger2",
                 "passenger3"
             ]
+        },
+        "passengers_positions": {
+            "passenger4": 2,
+            "passenger2": 14,
+            "passenger3": 10
         }
     },
     {
@@ -177,6 +246,11 @@
                 "passenger2",
                 "passenger3"
             ]
+        },
+        "passengers_positions": {
+            "passenger4": 2,
+            "passenger2": 15,
+            "passenger3": 10
         }
     },
     {
@@ -189,6 +263,11 @@
                 "passenger2",
                 "passenger3"
             ]
+        },
+        "passengers_positions": {
+            "passenger4": 2,
+            "passenger2": 16,
+            "passenger3": 10
         }
     },
     {
@@ -201,6 +280,11 @@
                 "passenger2",
                 "passenger3"
             ]
+        },
+        "passengers_positions": {
+            "passenger4": 2,
+            "passenger2": 17,
+            "passenger3": 10
         }
     },
     {
@@ -213,6 +297,11 @@
                 "passenger2",
                 "passenger3"
             ]
+        },
+        "passengers_positions": {
+            "passenger4": 2,
+            "passenger2": 18,
+            "passenger3": 10
         }
     },
     {
@@ -225,6 +314,11 @@
                 "passenger2",
                 "passenger3"
             ]
+        },
+        "passengers_positions": {
+            "passenger4": 2,
+            "passenger2": 19,
+            "passenger3": 10
         }
     },
     {
@@ -237,6 +331,11 @@
                 "passenger2",
                 "passenger3"
             ]
+        },
+        "passengers_positions": {
+            "passenger4": 2,
+            "passenger2": 20,
+            "passenger3": 10
         }
     },
     {
@@ -249,6 +348,10 @@
                 "passenger3",
                 "passenger4"
             ]
+        },
+        "passengers_positions": {
+            "passenger3": 10,
+            "passenger4": 2
         }
     },
     {
@@ -261,6 +364,10 @@
                 "passenger3",
                 "passenger4"
             ]
+        },
+        "passengers_positions": {
+            "passenger3": 10,
+            "passenger4": 2
         }
     },
     {
@@ -273,6 +380,10 @@
                 "passenger3",
                 "passenger4"
             ]
+        },
+        "passengers_positions": {
+            "passenger3": 10,
+            "passenger4": 2
         }
     },
     {
@@ -285,6 +396,10 @@
                 "passenger3",
                 "passenger4"
             ]
+        },
+        "passengers_positions": {
+            "passenger3": 10,
+            "passenger4": 2
         }
     },
     {
@@ -297,6 +412,10 @@
                 "passenger3",
                 "passenger4"
             ]
+        },
+        "passengers_positions": {
+            "passenger3": 10,
+            "passenger4": 2
         }
     },
     {
@@ -309,6 +428,10 @@
                 "passenger3",
                 "passenger4"
             ]
+        },
+        "passengers_positions": {
+            "passenger3": 10,
+            "passenger4": 2
         }
     },
     {
@@ -321,6 +444,10 @@
                 "passenger3",
                 "passenger4"
             ]
+        },
+        "passengers_positions": {
+            "passenger3": 10,
+            "passenger4": 2
         }
     },
     {
@@ -333,6 +460,10 @@
                 "passenger3",
                 "passenger4"
             ]
+        },
+        "passengers_positions": {
+            "passenger3": 10,
+            "passenger4": 2
         }
     },
     {
@@ -345,6 +476,10 @@
                 "passenger3",
                 "passenger4"
             ]
+        },
+        "passengers_positions": {
+            "passenger3": 10,
+            "passenger4": 2
         }
     },
     {
@@ -357,6 +492,10 @@
                 "passenger3",
                 "passenger4"
             ]
+        },
+        "passengers_positions": {
+            "passenger3": 10,
+            "passenger4": 2
         }
     },
     {
@@ -369,6 +508,10 @@
                 "passenger3",
                 "passenger4"
             ]
+        },
+        "passengers_positions": {
+            "passenger3": 11,
+            "passenger4": 2
         }
     },
     {
@@ -381,6 +524,10 @@
                 "passenger3",
                 "passenger4"
             ]
+        },
+        "passengers_positions": {
+            "passenger3": 12,
+            "passenger4": 2
         }
     },
     {
@@ -393,6 +540,10 @@
                 "passenger3",
                 "passenger4"
             ]
+        },
+        "passengers_positions": {
+            "passenger3": 13,
+            "passenger4": 2
         }
     },
     {
@@ -405,6 +556,10 @@
                 "passenger3",
                 "passenger4"
             ]
+        },
+        "passengers_positions": {
+            "passenger3": 14,
+            "passenger4": 2
         }
     },
     {
@@ -417,6 +572,10 @@
                 "passenger3",
                 "passenger4"
             ]
+        },
+        "passengers_positions": {
+            "passenger3": 15,
+            "passenger4": 2
         }
     },
     {
@@ -429,6 +588,10 @@
                 "passenger3",
                 "passenger4"
             ]
+        },
+        "passengers_positions": {
+            "passenger3": 16,
+            "passenger4": 2
         }
     },
     {
@@ -441,6 +604,10 @@
                 "passenger3",
                 "passenger4"
             ]
+        },
+        "passengers_positions": {
+            "passenger3": 17,
+            "passenger4": 2
         }
     },
     {
@@ -453,6 +620,10 @@
                 "passenger3",
                 "passenger4"
             ]
+        },
+        "passengers_positions": {
+            "passenger3": 18,
+            "passenger4": 2
         }
     },
     {
@@ -465,6 +636,10 @@
                 "passenger3",
                 "passenger4"
             ]
+        },
+        "passengers_positions": {
+            "passenger3": 19,
+            "passenger4": 3
         }
     },
     {
@@ -476,6 +651,9 @@
             "E1": [
                 "passenger4"
             ]
+        },
+        "passengers_positions": {
+            "passenger4": 3
         }
     },
     {
@@ -487,6 +665,9 @@
             "E1": [
                 "passenger4"
             ]
+        },
+        "passengers_positions": {
+            "passenger4": 3
         }
     },
     {
@@ -496,6 +677,7 @@
         },
         "passengers_assigned": {
             "E1": []
-        }
+        },
+        "passengers_positions": {}
     }
 ]
