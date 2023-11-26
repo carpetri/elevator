@@ -126,7 +126,7 @@ def create_plot(num_floors= 20, num_elevators = 2, log_file="elevator_time.log",
     def init_func():
         pass
     if giff:
-        ani = FuncAnimation(fig, auto_update, init_func=init_func, frames = range(0,max_time)   )
+        ani = FuncAnimation(fig, auto_update, init_func=init_func, frames = range(0,max_time+1)   )
         writergif = PillowWriter(fps=3) 
         ani.save('elevator_animation.gif', writer=writergif,)
     else:
