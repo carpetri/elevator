@@ -71,3 +71,7 @@ Included a time control mechanism to simulate the passing of time and the handli
 See the test cases file. Run with:
 `pytest`
 
+## Sample animation
+
+![](https://github.com/carpetri/elevator/blob/main/elevator_animation.gif)
+
