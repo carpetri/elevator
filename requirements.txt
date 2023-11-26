@@ -2,6 +2,7 @@ contourpy==1.2.0
 coverage==7.3.2
 cycler==0.12.1
 fonttools==4.45.1
+future==0.18.3
 iniconfig==2.0.0
 kiwisolver==1.4.5
 matplotlib==3.8.2
