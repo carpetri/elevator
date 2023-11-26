@@ -104,8 +104,9 @@ if __name__ == "__main__":
     # Run simulation
     elevator_system = run_simulation(num_elevators, num_floors, elevator_capacity, input_requests)
 
-    # Time summary
-    print(elevator_system.time_summary())
-
     if animate:
         create_plot(num_floors= num_floors, num_elevators = num_elevators, log_file = output_file) 
+        logger.debug(f"Animation created. See: elevator_animation.gif")
+
+    # Time summary
+    print(elevator_system.time_summary())
