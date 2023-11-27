@@ -3,12 +3,17 @@ class Elevator:
     def __init__(self, id, capacity):
         self.id = "E" + str(id)
         self.current_floor = 1
+        self.direction = None
         self.capacity = capacity
         self.passengers = []
 
     def is_full(self):
         """Checks if the elevator is at full capacity."""
         return len(self.passengers) >= self.capacity
+
+    def is_empty(self):
+        """Checks if the elevator is at full capacity."""
+        return len(self.passengers) == 0
 
     def load_passenger(self, passenger):
         """Loads a passenger into the elevator."""

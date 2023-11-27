@@ -5,7 +5,7 @@ class Passenger:
         self.source_floor = source_floor
         self.target_floor = target_floor
         self.request_time = request_time
-        #self.direction = "up" if source_floor < target_floor else "down"
+        self.direction = "up" if source_floor < target_floor else "down"
         self.pickup_time = None
         self.dropoff_time = None
         self.assignation_wait_time = 0

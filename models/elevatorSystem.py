@@ -44,14 +44,16 @@ class ElevatorSystem:
             if elevator.passengers[:]:
                 for passenger in elevator.passengers[:]:
                     if passenger.target_floor == elevator.current_floor:
-                        if not passenger.pickup_time is None:  
+                        if passenger.pickup_time is not None:  
                             passenger.dropoff_time = self.time
                             self.processed_requests.append(passenger)
                             elevator.unload_passenger(passenger)
+                            if elevator.is_empty():
+                                elevator.direction = None
                             ElevatorSystem.logger.debug(f"Elevator {elevator.id}.\n\tUnloading passenger: {passenger.id}")
                             ElevatorSystem.logger.debug(f"\tRemaining passengers: {[p.id for p in self.requests]}")
                     # Mark the pickup_time
-                    if passenger.source_floor == elevator.current_floor  :
+                    if passenger.source_floor == elevator.current_floor and (elevator.direction == passenger.direction or elevator.direction is None):
                         ElevatorSystem.logger.debug(f"Elevator {elevator.id} is at floor {elevator.current_floor} passenger {passenger.id} is picked up.")
                         passenger.pickup_time = self.time
     
@@ -65,14 +67,17 @@ class ElevatorSystem:
                     nearest_passenger = min(on_board_passengers, key=lambda p: abs(elevator.current_floor - p.target_floor))
                     ElevatorSystem.logger.debug(f"Elevator {elevator.id} is t floor {elevator.current_floor} going to drop {nearest_passenger.id} at {nearest_passenger.target_floor}")
                     if elevator.current_floor < nearest_passenger.target_floor:
+                        elevator.direction = "up"
                         elevator.current_floor += 1
                     elif elevator.current_floor > nearest_passenger.target_floor:
+                        elevator.direction = "down"
                         elevator.current_floor -= 1
                 else:
                     # Move towards the nearest source
                     waiting_passengers = [p for p in elevator.passengers if p.pickup_time is None]
                     nearest_passenger = min(waiting_passengers, key=lambda p: abs(elevator.current_floor - p.source_floor))
                     ElevatorSystem.logger.debug(f"Elevator {elevator.id} is at floor {elevator.current_floor} going to pick {nearest_passenger.id} at {nearest_passenger.source_floor}")
+                    elevator.direction = nearest_passenger.direction
                     if elevator.current_floor < nearest_passenger.source_floor:
                         elevator.current_floor += 1
                     elif elevator.current_floor > nearest_passenger.source_floor:
