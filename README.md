@@ -116,3 +116,29 @@ Mean Total Time 12.25
  Max Total Time 19.00
 Mean Total Time 12.25
 ```
+
+### Long Sample
+
+See file `generate_data.py`. It generates a sample input file. I created a sample file with 100 passengers that arrive within times `0-10` with random `source` and `destination`. 
+
+The parameters of the simulation are the following:
+- 3 Elevtors
+- 20 Floors 
+- 10 person capacity
+
+To run: 
+
+`./elevatorSystemSimulator.py -ne 3 -nf 20 -c 10 long_sample.json long_out.json -a`
+
+![](https://github.com/carpetri/elevator/blob/main/sample_animations/long_animation.gif)
+
+### Results 
+
+```
+  Min Wait Time   0.00
+  Max Wait Time 115.00
+ Mean Wait Time  38.31
+ Min Total Time   4.00
+ Max Total Time 122.00
+Mean Total Time  45.14
+```
