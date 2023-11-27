@@ -75,7 +75,7 @@ See the test cases file. Run with:
 
 ### One elevator
 
-![](https://github.com/carpetri/elevator/blob/main/elevator_animation.gif)
+![](https://github.com/carpetri/elevator/blob/main/sample_animations/elevator_animation.gif)
 
 #### Results
 
@@ -90,10 +90,24 @@ Mean Total Time 23.75
 
 ### Two elevators
 
-![](https://github.com/carpetri/elevator/blob/main/elevator_animation_ne2.gif)
+![](https://github.com/carpetri/elevator/blob/main/sample_animations/elevator_animation_ne2.gif)
 
 ### Results
 
+```
+  Min Wait Time  0.00
+  Max Wait Time 10.00
+ Mean Wait Time  3.25
+ Min Total Time  2.00
+ Max Total Time 19.00
+Mean Total Time 12.25
+```
+
+### Three elevators
+
+![](https://github.com/carpetri/elevator/blob/main/sample_animations/elevator_animation_ne3.gif)
+
+### Results
 ```
   Min Wait Time  0.00
   Max Wait Time 10.00
